@@ -108,3 +108,6 @@ function findwords(rows, letters, soup) {
     
     return oieMatchs
 }
+
+//example call
+console.log(`MATCHES = ${findwords(3,3,[["O","I","E"],["I","i","E"],["E","I","E"]])}`);
