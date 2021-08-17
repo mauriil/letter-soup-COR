@@ -28,7 +28,9 @@ npm start
 And you'll see the matches for the example call.
 
 You'll noticed that the function expect 3 parameters
-(**ROWS** , **LETTERS IN EACH ROW**, **SOUP LETTER**)
+(**ROWS** , **LETTERS IN EACH ROW**, **SOUP LETTER**).
+
+Those parameters are required in (**INTEGER** , **INTEGER**, **ARRAY OF ARRAYS**).
 
 You can change those params to your owns.
 
