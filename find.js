@@ -47,57 +47,49 @@ function findwords(rows, letters, soup) {
 
                 if (soup[row][letter+1] != undefined && soup[row][letter+1].toUpperCase() === "I") {
                     if (soup[row][letter+2] != undefined && soup[row][letter+2].toUpperCase() === "E") {
-                        oieMatchs++;
-                        console.log("der");
+                        oieMatchs++;                        
                     }
                 } //right
 
-                if (soup[row+1] != undefined && soup[row+1][letter+1] != undefined && soup[row][letter+1].toUpperCase() === "I") {
-                    if (soup[row+2] != undefined && soup[row+2][letter+2] != undefined && soup[row][letter+2].toUpperCase() === "E") {
-                        oieMatchs++;
-                        console.log("derabajo");
+                if (soup[row+1] != undefined && soup[row+1][letter+1] != undefined && soup[row+1][letter+1].toUpperCase() === "I") {
+                    if (soup[row+2] != undefined && soup[row+2][letter+2] != undefined && soup[row+2][letter+2].toUpperCase() === "E") {
+                        oieMatchs++;                        
                     }
                 }//lower right
 
-                if (soup[row-1] != undefined && soup[row-1][letter+1] != undefined && soup[row][letter+1].toUpperCase() === "I") {
-                    if (soup[row-2] != undefined && soup[row-2][letter+2] != undefined && soup[row][letter+2].toUpperCase() === "E") {
-                        oieMatchs++;
-                        console.log("derarriba");
+                if (soup[row-1] != undefined && soup[row-1][letter+1] != undefined && soup[row-1][letter+1].toUpperCase() === "I") {
+                    if (soup[row-2] != undefined && soup[row-2][letter+2] != undefined && soup[row-2][letter+2].toUpperCase() === "E") {
+                        oieMatchs++;                        
                     }
                 }//upper right
 
-                if (soup[row+1] != undefined && soup[row+1][letter-1] != undefined && soup[row][letter+1].toUpperCase() === "I") {
-                    if (soup[row+2] != undefined && soup[row+2][letter-2] != undefined && soup[row][letter+2].toUpperCase() === "E") {
-                        oieMatchs++;
-                        console.log("izaba");
+                if (soup[row+1] != undefined && soup[row+1][letter-1] != undefined && soup[row+1][letter-1].toUpperCase() === "I") {
+                    if (soup[row+2] != undefined && soup[row+2][letter-2] != undefined && soup[row+2][letter-2].toUpperCase() === "E") {
+                        oieMatchs++;                        
                     }
                 }//lower left
 
-                if (soup[row-1] != undefined && soup[row-1][letter-1] != undefined && soup[row][letter+1].toUpperCase() === "I") {
-                    if (soup[row-2] != undefined && soup[row-2][letter-2] != undefined && soup[row][letter+2].toUpperCase() === "E") {
+                if (soup[row-1] != undefined && soup[row-1][letter-1] != undefined && soup[row-1][letter-1].toUpperCase() === "I") {
+                    if (soup[row-2] != undefined && soup[row-2][letter-2] != undefined && soup[row-2][letter-2].toUpperCase() === "E") {
                         oieMatchs++;
-                        console.log("izari");
                     }
                 }//upper left
 
                 if (soup[row-1] != undefined && soup[row-1][letter].toUpperCase() === "I") {
                     if (soup[row-2] != undefined && soup[row-2][letter].toUpperCase() === "E") {
                         oieMatchs++;
-                        console.log("arriba");
                     }
                 } // up
 
                 if (soup[row+1] != undefined && soup[row+1][letter].toUpperCase() === "I") {
                     if (soup[row+2] != undefined && soup[row+2][letter].toUpperCase() === "E") {
                         oieMatchs++;
-                        console.log("abajo");
                     }
                 } // down
 
                 if (soup[row][letter-1] != undefined && soup[row][letter-1].toUpperCase() === "I") {
                     if (soup[row][letter-2] != undefined && soup[row][letter-2].toUpperCase() === "E") {
                         oieMatchs++;
-                        console.log("izquierda");
                     }
                 } // left
             }
@@ -109,5 +101,7 @@ function findwords(rows, letters, soup) {
     return oieMatchs
 }
 
+module.exports = findwords
+
 //example call
-console.log(`MATCHES = ${findwords(3,3,[["O","I","E"],["I","i","E"],["E","I","E"]])}`);
+// console.log(`MATCHES = ${findwords(5,5,[["E","A","E","A","E"],["A","I","I","I","A"],["E","I","O","I","E"],["A","I","I","I","A"],["E","A","E","A","E"]])}`);
