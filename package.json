@@ -1,0 +1,25 @@
+{
+  "name": "letter-soup-cor",
+  "version": "1.0.0",
+  "description": "Script that find \"IOE\" words in the soup letter.",
+  "main": "find.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriil/letter-soup-COR.git"
+  },
+  "keywords": [
+    "LSCOR"
+  ],
+  "author": "Lahitte, Mauricio Eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriil/letter-soup-COR/issues"
+  },
+  "homepage": "https://github.com/mauriil/letter-soup-COR#readme",
+  "devDependencies": {
+    "mocha": "^9.0.3"
+  }
+}
