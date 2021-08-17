@@ -1,6 +1,7 @@
 # COR proyect Challenge - Lahitte Mauricio #
 
-Data engineer challenge, using NodeJS
+Data engineer challenge, using NodeJS.
+Script that find \"IOE\" words in the soup letter.
 
 ## Set-Up & Running 🔧 ##
 
@@ -25,6 +26,11 @@ After the install process you can run:
 npm start 
 ```
 And you'll see the matches for the example call.
+
+You'll noticed that the function expect 3 parameters
+(**ROWS** , **LETTERS IN EACH ROW**, **SOUP LETTER**)
+
+You can change those params to your owns.
 
 ## Running tests 🔩 ##
 
