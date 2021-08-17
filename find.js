@@ -104,4 +104,4 @@ function findwords(rows, letters, soup) {
 module.exports = findwords
 
 //example call
-// console.log(`MATCHES = ${findwords(5,5,[["E","A","E","A","E"],["A","I","I","I","A"],["E","I","O","I","E"],["A","I","I","I","A"],["E","A","E","A","E"]])}`);
+console.log(`MATCHES = ${findwords(5,5,[["E","A","E","A","E"],["A","I","I","I","A"],["E","I","O","I","E"],["A","I","I","I","A"],["E","A","E","A","E"]])}`);

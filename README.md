@@ -8,7 +8,7 @@ Instructions to have everything you need to put this deployment into operation.
 
 ### Prerequisites 📋 ###
 
-* NodeJS installed.
+* [NodeJS](https://nodejs.org/en/) installed.
 
 ### Install 🛠️ ###
 
@@ -16,14 +16,15 @@ Once you have cloned or downloaded a .zip of the project in a folder of your lik
 ```
 npm install
 ```
-just to have all the dependence packages necessaries to run the server.
+just to have all the dependence packages necessaries to run the script.
 
 ### Run 📦 ###
 
-After the install process you have to configure the enviroment variable (below explained), and then just have to run:
+After the install process you can run:
 ```
 npm start 
 ```
+And you'll see the matches for the example call.
 
 ## Running tests 🔩 ##
 

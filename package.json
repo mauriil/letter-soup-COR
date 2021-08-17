@@ -4,6 +4,7 @@
   "description": "Script that find \"IOE\" words in the soup letter.",
   "main": "find.js",
   "scripts": {
+    "start": "node find.js",
     "test": "mocha"
   },
   "repository": {
